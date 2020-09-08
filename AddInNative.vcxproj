@@ -22,7 +22,6 @@
     <ProjectGuid>{55890DF2-D13E-4C89-A01D-79CAD6726246}</ProjectGuid>
     <RootNamespace>testCPP</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -87,8 +86,8 @@
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>D:\Workspace\C\Git\bzip2\1.0.5\bzip2-1.0.5\ReleaseLIB\;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\Workspace\C\Git\bzip2\1.0.5\bzip2-1.0.5;..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>packages\bzip2.v140.1.0.6.10\build\native\lib\Win32\Debug\;$(LibraryPath)</LibraryPath>
+    <IncludePath>packages\bzip2.v140.1.0.6.10\build\native\include\;include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>packages\bzip2.v140.1.0.6.10\build\native\lib\Win32\Release;$(LibraryPath)</LibraryPath>
@@ -120,7 +119,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalDependencies>libbz2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libbz2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
